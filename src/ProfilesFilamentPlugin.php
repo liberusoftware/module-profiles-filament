@@ -10,9 +10,20 @@ use Liberu\Foundation\ProfilesFilament\Pages\Overview;
 
 final class ProfilesFilamentPlugin implements Plugin
 {
-    public static function make(): self { return new self(); }
-    public function getId(): string { return 'profiles-filament'; }
-    public function register(Panel $panel): void { $panel->pages([Overview::class]); }
+    public static function make(): self
+    {
+        return new self;
+    }
+
+    public function getId(): string
+    {
+        return 'profiles-filament';
+    }
+
+    public function register(Panel $panel): void
+    {
+        $panel->pages([Overview::class]);
+    }
+
     public function boot(Panel $panel): void {}
 }
-

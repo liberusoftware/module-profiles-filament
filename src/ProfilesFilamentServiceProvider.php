@@ -13,4 +13,3 @@ final class ProfilesFilamentServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'profiles-filament');
     }
 }
-
